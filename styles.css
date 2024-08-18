@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(255, 252, 241);
+    padding: 0 25%; /* Adjust the px value based on desired space */
+    color: #474747; /* Common property */
+
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10%; /* Reduced padding for mobile screens */
+    }
+}
+
+body h1, body p, body h2{
+}
+
+body h1 {
+    font-family: IBM Plex Mono, Roboto Mono;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: -10px;
+
+}
+
+body h2 {
+    font-family: Roboto Mono;
+    font-size: 30px;
+    font-weight: light;
+}
+
+body p {
+    margin: 0; /* Common property */
+    font-family: Roboto Mono;
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: -5px;
+}
+
+a {
+    all: unset; /* Removes all inherited and browser-default styling */
+    color: rgb(109, 137, 212); /* Re-apply necessary styles */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
+}
+
+.word1 {
+    color: #474747; /* Color for the first word */
+}
+
+.word2 {
+    color: #ec5422; /* Color for the third word */
+}
