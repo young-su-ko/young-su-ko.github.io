@@ -14,15 +14,11 @@ body {
 body h1 {
     font-family: IBM Plex Mono, Roboto Mono;
     font-size: 45px;
-    font-weight: bold;
-    word-spacing: -10px;
-
 }
 
 body h2 {
     font-family: Roboto Mono;
     font-size: 30px;
-    font-weight: light;
 }
 
 body p {
@@ -55,9 +51,8 @@ a:hover {
 
 .japanese-text {
     font-family: DotGothic16;
-    font-size: 18px;
+    font-size: 19px;
 }
-
 
 .personal-link {
     color: #474747;
@@ -77,3 +72,4 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
