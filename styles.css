@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 252, 241);
+    background-color: rgb(255, 251, 241);
     padding: 0 25%;
     color: #474747;
 
@@ -12,7 +12,7 @@ body {
 }
 
 body h1 {
-    font-family: IBM Plex Mono, Roboto Mono;
+    font-family: IBM Plex Mono;
     font-size: 45px;
 }
 
@@ -73,3 +73,6 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.paper-title {
+    font-weight: bold;
+}
