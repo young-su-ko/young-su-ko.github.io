@@ -2,6 +2,7 @@ body {
     background-color: rgb(255, 251, 241);
     padding: 0 25%;
     color: #474747;
+    word-wrap: break-word;
 
 }
 
@@ -69,8 +70,8 @@ a:hover {
 
 .logo-links {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .paper-title {
