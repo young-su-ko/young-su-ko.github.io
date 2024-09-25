@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(255, 251, 241);
+    background-color: rgb(255, 255, 255);
     padding: 0 25%;
-    color: #474747;
+    color: #000000;
     word-wrap: break-word;
 
 }
@@ -20,6 +20,7 @@ body h1 {
 body h2 {
     font-family: Roboto Mono;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 body p {
@@ -43,7 +44,7 @@ a:hover {
 }
 
 .word1 {
-    color: #474747;
+    color: #000000;
 }
 
 .word2 {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .personal-link {
-    color: #474747;
+    color: #232323;
     font-size: 40px;
     transition: color 0.3s ease;
     margin-top: 20px;
@@ -81,4 +82,9 @@ a:hover {
 .first-author {
     color: #ec5422;
     font-weight: bold;
+}
+
+.line-separator {
+    border: none;            
+    border-top: 1px solid #00000026;
 }
