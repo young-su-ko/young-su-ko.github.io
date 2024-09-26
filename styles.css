@@ -6,6 +6,7 @@ body {
 
 }
 
+
 @media (max-width: 800px) {
     body {
         padding: 0 10%;
@@ -47,7 +48,10 @@ a:hover {
     color: #000000;
 }
 
+
+
 .word2 {
+    font-family: inherit;
     color: #ec5422;
 }
 
