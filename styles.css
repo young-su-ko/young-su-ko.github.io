@@ -3,9 +3,6 @@ body {
     padding: 0 25%;
     color: #000000;
     word-wrap: break-word;
-    -webkit-font-smoothing: subpixel-antialiased !important; 
-    text-rendering:optimizeLegibility !important;
-
 }
 
 
