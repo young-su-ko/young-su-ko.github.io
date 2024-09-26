@@ -14,7 +14,7 @@ body {
 }
 
 body h1 {
-    font-family: IBM Plex Mono, Roboto Mono;
+    font-family: IBM Plex Mono;
     font-size: 45px;
 }
 
@@ -48,9 +48,12 @@ a:hover {
     color: #000000;
 }
 
-
-
 .word2 {
+    color: #ec5422;
+}
+
+.circle {
+    font-family: Roboto Mono;
     color: #ec5422;
 }
 
