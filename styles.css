@@ -14,7 +14,7 @@ body {
 }
 
 body h1 {
-    font-family: IBM Plex Mono;
+    font-family: IBM Plex Mono, Roboto Mono;
     font-size: 45px;
 }
 
@@ -51,7 +51,6 @@ a:hover {
 
 
 .word2 {
-    font-family: inherit;
     color: #ec5422;
 }
 
