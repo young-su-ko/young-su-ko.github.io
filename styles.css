@@ -3,6 +3,8 @@ body {
     padding: 0 25%;
     color: #000000;
     word-wrap: break-word;
+    -webkit-font-smoothing: subpixel-antialiased !important; 
+    text-rendering:optimizeLegibility !important;
 
 }
 
@@ -16,6 +18,7 @@ body {
 body h1 {
     font-family: IBM Plex Mono;
     font-size: 45px;
+    font-weight: 600px;
 }
 
 body h2 {
@@ -48,12 +51,14 @@ a:hover {
     color: #000000;
 }
 
+
 .word2 {
+    font-family: IBM Plex Mono;
     color: #ec5422;
 }
 
 .circle {
-    font-family: Roboto Mono;
+    font-family: IBM Plex Mono;
     color: #ec5422;
 }
 
