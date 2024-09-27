@@ -55,8 +55,9 @@ a:hover {
 }
 
 .circle {
-    font-family: IBM Plex Mono;
+    font-family: DotGothic16;
     color: #ec5422;
+    font-size: 35px;
 }
 
 .japanese-text {
