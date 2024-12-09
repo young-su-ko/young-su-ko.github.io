@@ -1,99 +1,141 @@
 body {
-    background-color: rgb(255, 255, 255);
-    padding: 0 25%;
-    color: #000000;
+    background-color: #fefffe;
+    width: 50%;
+    margin: 0 auto;
+    color: #171a21;
     word-wrap: break-word;
+    -webkit-font-smoothing: subpixel-antialiased;
+    letter-spacing: -1px;
 }
 
-
-@media (max-width: 800px) {
-    body {
-        padding: 0 10%;
-    }
-}
-
-body h1 {
+header h1 {
     font-family: IBM Plex Mono;
     font-size: 45px;
-    font-weight: 600px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: -3px;
 }
 
-body h2 {
+nav {
     font-family: Roboto Mono;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header-link {
+    all: unset;
+    color: #171a2190;
+    margin-right: -5px;
+}
+
+.section-heading {
+    font-family: Roboto Mono;
+    font-weight: 500;
     font-size: 30px;
     margin-bottom: 0px;
 }
-
-body p {
-    margin: 0;
-    font-family: Roboto Mono;
-    font-size: 20px;
+main {
     line-height: 30px;
     word-spacing: -5px;
+    font-family: Roboto Mono;
+    font-size: 25px;
 }
 
 a {
     all: unset;
     color: rgb(109, 137, 212);
-    text-decoration: underline; 
-    text-decoration-thickness: 1px;
     cursor: pointer;
 }
 
 a:hover {
+    text-decoration: underline; 
     text-decoration-thickness: 1.5px;
 }
 
-.word1 {
-    color: #000000;
-}
-
-
-.word2 {
+.orange-slash {
     font-family: IBM Plex Mono;
     color: #ec5422;
 }
-
 .circle {
     font-family: DotGothic16;
     color: #ec5422;
     font-size: 30px;
 }
-
 .japanese-text {
     font-family: DotGothic16;
-    font-size: 19px;
+    font-size: 22px;
+}
+
+.paper-title {
+    font-weight: 500;
+}
+.first-author-indicator {
+    color: #ec5422;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .personal-link {
-    color: #232323;
+    color: #343434;
     font-size: 40px;
     transition: color 0.3s ease;
-    margin-top: 20px;
     padding: 5px;
     display: inline-block;
 }
 
-.personal-link:hover {
-    color: #ec5422;
-}
-
-.logo-links {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.paper-title {
-    font-weight: bold;
-}
-
-.first-author {
-    color: #ec5422;
-    font-weight: bold;
-}
-
 .line-separator {
     border: none;            
-    border-top: 1px solid #00000026;
+    border-top: 1px solid #e6e6e6;
+}
+
+.blog-entries {
+    font-family: Roboto Mono;
+}
+.blog-entries li {
+    list-style: square;
+    margin-bottom: 20px;
+}
+.blog-entries a {
+    all: unset;
+    display:block
+}
+.blog-entries h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.blog-entries p {
+    margin: 3px 0;
+}
+.blog-entries time {
+    font-size: 14px;
+    color: #171a2190;
+}
+.blog-link:hover {
+    cursor: pointer;
+}
+.blog-link:hover h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 80%;
+    }
+    main {
+        font-size: 20px;
+    }
+    .blog-entries h3 {
+        font-size: 20px;
+    }
+    .japanese-text {
+        font-size: 18px;
+    }
 }
