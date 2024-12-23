@@ -1,3 +1,8 @@
+:root {
+    --orange: #ec5422;
+    --blue: rgb(109, 137, 212);
+  }
+
 body {
     background-color: #fefffe;
     width: 50%;
@@ -44,7 +49,7 @@ main {
 
 a {
     all: unset;
-    color: rgb(109, 137, 212);
+    color: var(--blue);
     cursor: pointer;
 }
 
@@ -55,11 +60,11 @@ a:hover {
 
 .orange-slash {
     font-family: IBM Plex Mono;
-    color: #ec5422;
+    color: var(--orange);
 }
 .circle {
     font-family: DotGothic16;
-    color: #ec5422;
+    color: var(--orange);
     font-size: 30px;
 }
 .japanese-text {
@@ -71,7 +76,7 @@ a:hover {
     font-weight: 500;
 }
 .first-author-indicator {
-    color: #ec5422;
+    color: var(--orange);
     font-weight: 700;
 }
 
