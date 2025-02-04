@@ -25,14 +25,19 @@ nav {
     font-family: Roboto Mono;
     font-weight: 400;
     font-size: 25px;
-    cursor: pointer;
 }
 
 .header-link {
     all: unset;
     color: #171a2190;
     margin-right: -5px;
+    cursor: pointer;
 }
+
+.tight-letter {
+    letter-spacing: -3px; /* Adjust the negative value as needed */
+  }
+  
 
 .section-heading {
     font-family: Roboto Mono;
