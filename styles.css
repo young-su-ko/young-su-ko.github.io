@@ -80,7 +80,7 @@ a:hover {
 .paper-title {
     font-weight: 500;
 }
-.first-author-indicator {
+.me-indicator {
     color: var(--orange);
     font-weight: 700;
 }
