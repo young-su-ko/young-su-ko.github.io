@@ -1,3 +1,4 @@
 url: "https://young-su-ko.github.io"
 baseurl: ""
 title: "YOUNGSU KO"
+sass_dir: _sass
