@@ -17,10 +17,12 @@
 
 #theme-toggle-light-icon {
   color: #f36536;
+  transition: color 0.2s ease-in-out;
 }
 
 #theme-toggle-dark-icon {
   color: rgb(109, 137, 212);
+  transition: color 0.2s ease-in-out;
 }
 
 body {
@@ -31,18 +33,34 @@ body {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-* {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+html {
+  transition: background-color 0.2s ease-in-out;
+}
+
+p, span, div, h1, h2, h3, h4, h5, h6, li, td, th {
+  transition: color 0.2s ease-in-out;
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }
 
 span.accent {
   color: var(--accent-color);
+  transition: color 0.2s ease-in-out;
   // font-family: IBM Plex Mono;
   // font-size: 1.25em;
 }
 
 body a {
   color: var(--link-color);
+  transition: color 0.2s ease-in-out;
 }
 
 body a:hover {
@@ -62,6 +80,7 @@ body a:hover {
   width: 16px; 
   height: 16px;
   position: relative;
+  transition: color 0.2s ease-in-out;
 }
 
 .theme-toggle i {
@@ -113,15 +132,6 @@ body {
   margin-top: 0;
 }
 
-// Align image container with about content (accounting for h3 heading)
-.col-lg-3.col-md-4.col-sm-5 {
-  display: flex;
-  align-items: flex-start;
-  
-  .image-container {
-    width: 100%;
-  }
-}
 
 // not so pretty spacing fix :(
 .col-lg-4.col-md-4.col-sm-6.col-7.mx-auto {
@@ -137,6 +147,7 @@ body {
   max-width: 250px;
   width: 100%;
   height: auto;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .home-image-caption {
@@ -150,6 +161,7 @@ span.link-text {
   color: var(--text-color);
   font-family: DotGothic16;
   letter-spacing: 0px;
+  transition: color 0.2s ease-in-out;
 }
 
 
