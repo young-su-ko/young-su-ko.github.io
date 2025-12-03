@@ -1,4 +1,5 @@
 url: "https://young-su-ko.github.io"
 baseurl: ""
 title: "YOUNGSU KO"
-theme: academic-jekyll-theme
+# theme: academic-jekyll-theme
+remote_theme: LeNPaul/academic
