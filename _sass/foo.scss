@@ -96,10 +96,10 @@ body {
 
 // Constrain page width on wider screens
 .col-lg-8.mx-auto {
-  max-width: 1200px;
+  max-width: 1100px;
   
   @media (min-width: 1920px) {
-    max-width: 1400px;
+    max-width: 1100px;
   }
 }
 
