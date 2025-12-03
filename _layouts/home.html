@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="row g-5 mb-3">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+    <h3 class="fw-bold"><span class="accent"></span>ABOUT<span class="accent">/</span></h3>
+    <div class="about">
+      {{ page.about_content | markdownify }}
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-7 mx-auto">
+    <div class="image-container pt-0 pt-md-5">
+      <img src="{{ site.github.url }}/assets/img/me.jpg" alt="Home" width="100%" class="home-image">
+    </div>
+  </div>
+</div>
+
+<div class="row g-5 mb-3">
+  <div class="col-md-12">
+    <h3 class="fw-bold"><span class="accent"></span>RESEARCH<span class="accent">/</span></h3>
+    <div class="research">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+{% include publications.html %}

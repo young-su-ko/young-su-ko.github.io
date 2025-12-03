@@ -1,0 +1,12 @@
+menu:
+- {name: 'home', url: '/'}
+# - {name: 'projects', url: '/publications'}
+- {name: 'notebook', url: 'https://young-su-ko.github.io/notebook/'}
+- {name: 'cv', url: '/assets/files/cv.pdf'}
+
+social:
+- {name: 'github', icon: 'github-alt', link: 'https://github.com/young-su-ko'}
+- {name: 'scholar', icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=CPSTq94AAAAJ&hl=en'}
+- {name: 'linkedin', icon: 'linkedin', link: 'https://www.linkedin.com/in/young-su-ko-b02450173/'}
+- {name: 'x', icon: 'square-x-twitter', link: 'https://x.com/youngsuko9'}
+

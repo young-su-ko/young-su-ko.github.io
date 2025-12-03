@@ -1,0 +1,26 @@
+<div class="row g-5 mb-3">
+  <div>
+    <h3 class="fw-bold mb-0"><span class="accent"></span>SELECTED WORKS<span class="accent">/</span></h3>
+    <p class="small-note">For a complete list of works, please see <a href="https://scholar.google.com/citations?user=CPSTq94AAAAJ&hl=en">Google Scholar</a>.</p>
+
+    <div class="publications-list">
+      {% if page.title == "Home" %}
+        {% for item in site.data.publications.featured %}
+          <div class="publication-item">
+            <p class="publication mb-1">
+              <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>. {{ item.authors }}, <em>{{ item.journal }}</em>, {{ item.year }}.</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        {% for item in site.data.publications.index %}
+          <div class="publication-item mb-3">
+            <p class="publication mb-1">
+              <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>. {{ item.authors }}, <em>{{ item.journal }}</em>, {{ item.year }}.
+            </p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+  </div>
+</div>
