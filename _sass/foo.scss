@@ -94,6 +94,15 @@ body {
   align-items: flex-start;
 }
 
+// Constrain page width on wider screens
+.col-lg-8.mx-auto {
+  max-width: 1200px;
+  
+  @media (min-width: 1920px) {
+    max-width: 1400px;
+  }
+}
+
 .image-container {
   padding-bottom: 1rem;
   display: flex;
@@ -125,6 +134,9 @@ body {
   border-radius: 50%;
   padding: 0.15rem;
   border: 0.15rem solid var(--accent-color);
+  max-width: 250px;
+  width: 100%;
+  height: auto;
 }
 
 .home-image-caption {
