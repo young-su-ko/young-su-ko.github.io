@@ -1,11 +1,3 @@
 url: "https://young-su-ko.github.io"
 baseurl: ""
 title: "YOUNGSU KO"
-theme: null
-
-sass:
-  load_paths:
-    - _theme/assets/css
-
-include:
-  - _theme
