@@ -1,6 +1,7 @@
 ---
 layout: notebook
 title: "notebook"
+permalink: /notebook/
 ---
 
 <div class="row g-2 g-lg-5 mb-1">
