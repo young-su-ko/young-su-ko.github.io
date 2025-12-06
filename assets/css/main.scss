@@ -1,3 +1,51 @@
 ---
 ---
 @import "foo";
+
+code {
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  color: var(--code-text-color);
+  background: var(--code-bg-color);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+div.highlighter-rouge code,
+pre code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+
+.highlight {
+  border-radius: 1rem;
+  background: var(--code-bg-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hljs {
+  background: var(--code-bg-color) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+pre.hljs {
+  background: var(--code-bg-color) !important;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  background-color: var(--blockquote-bg-color);
+  color: var(--blockquote-text-color);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  
+  p { 
+    font-size: 0.95rem;
+    margin: 0; 
+  }
+}

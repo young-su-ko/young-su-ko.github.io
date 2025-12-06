@@ -2,3 +2,11 @@ url: "https://young-su-ko.github.io"
 baseurl: ""
 title: "YOUNGSU KO"
 sass_dir: _sass
+
+theme_config:
+  back_home_text: "↩" # customize text for homepage link in post layout
+  date_format: "%Y/%m/%d" # customize how date is formatted
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

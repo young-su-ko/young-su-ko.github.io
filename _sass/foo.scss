@@ -4,7 +4,11 @@
   --text-color: #1f1f1f;
   --accent-color: #f36536;
   --link-color: #1f1f1f;
-  --font-family: "Roboto Mono";
+  --font-family: "Inconsolata";
+  --code-text-color: #1f1f1f;
+  --code-bg-color: #f1f1f1;
+  --blockquote-bg-color: #f1f1f1;
+  --blockquote-text-color: #1f1f1fee;
 }
 
 
@@ -13,6 +17,10 @@
   --text-color: #fdfdfd;
   --accent-color:rgb(109, 137, 212);
   --link-color: #fdfdfd;
+  --code-text-color: rgb(190, 195, 205);
+  --code-bg-color: rgb(41, 44, 54);
+  --blockquote-bg-color: rgb(41, 44, 54);
+  --blockquote-text-color: #fdfdfdfd;
 }
 
 #theme-toggle-light-icon {
@@ -29,8 +37,13 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family);
-  letter-spacing: -1px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+body p, li {
+  font-size: 1.1rem;
 }
 
 html {
@@ -175,7 +188,7 @@ nav {
 }
 
 .small-note {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-color);
 }
 
@@ -191,4 +204,56 @@ nav {
       }
     }
   }
+}
+
+.MathJax,
+.MathJax_SVG,
+mjx-container {
+  color: var(--text-color) !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.MathJax_SVG_Display,
+.MathJax_Display,
+mjx-container[display="true"] {
+  color: var(--text-color) !important;
+}
+
+.MathJax_SVG span,
+mjx-container mjx-math {
+  color: var(--text-color) !important;
+}
+
+article h5,
+article h4,
+article h3,
+article h2,
+article h1 {
+  text-transform: uppercase;
+}
+
+.posts-list p.mb-1 {
+  text-decoration: underline;
+}
+.posts-list p.mb-1:hover {
+  text-decoration-thickness: 2px;
+}
+
+time {
+  font-size: 0.9rem;
+}
+
+.footnotes {
+    li {
+      font-size: 0.95rem;
+    }
+    p {
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+      font-size: 0.95rem;
+    }
+}
+
+sup a {
+  color: var(--accent-color) !important;
 }

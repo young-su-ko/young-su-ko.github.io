@@ -10,9 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theme === 'dark') {
       lightIcon.classList.remove('show');
       darkIcon.classList.add('show');
+      // Switch highlight.js theme
+      document.getElementById('highlight-theme-light').disabled = true;
+      document.getElementById('highlight-theme-dark').disabled = false;
     } else {
       lightIcon.classList.add('show');
       darkIcon.classList.remove('show');
+      // Switch highlight.js theme
+      document.getElementById('highlight-theme-light').disabled = false;
+      document.getElementById('highlight-theme-dark').disabled = true;
+    }
+    
+    // Re-highlight code blocks with new theme
+    if (window.hljs) {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+      });
+    }
+    
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise().catch(function (err) {
+        console.log('MathJax re-render error:', err);
+      });
     }
   };
 
@@ -20,9 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentTheme === 'dark') {
     lightIcon.classList.remove('show');
     darkIcon.classList.add('show');
+    document.getElementById('highlight-theme-light').disabled = true;
+    document.getElementById('highlight-theme-dark').disabled = false;
   } else {
     lightIcon.classList.add('show');
     darkIcon.classList.remove('show');
+    document.getElementById('highlight-theme-light').disabled = false;
+    document.getElementById('highlight-theme-dark').disabled = true;
   }
 
   themeToggle.addEventListener('click', () => {

@@ -1,7 +1,6 @@
 menu:
 - {name: 'home', url: '/'}
-# - {name: 'projects', url: '/publications'}
-- {name: 'notebook', url: 'https://young-su-ko.github.io/notebook/'}
+- {name: 'notebook', url: '/notebook'}
 - {name: 'cv', url: '/assets/files/cv.pdf'}
 
 social:
