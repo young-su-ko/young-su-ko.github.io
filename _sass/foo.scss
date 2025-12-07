@@ -216,12 +216,37 @@ nav {
   font-size: 1.1em !important;
 }
 
-article h5,
-article h4,
-article h3,
-article h2,
-article h1 {
-  text-transform: uppercase;
+article {
+  counter-reset: section;
+  
+  h4 {
+    counter-increment: section;
+    counter-reset: subsection;
+    
+    &::before {
+      content: counter(section) ". ";
+      color: var(--accent-color);
+    }
+  }
+  
+  h5 {
+    counter-increment: subsection;
+    counter-reset: subsubsection;
+    
+    &::before {
+      content: counter(section) "." counter(subsection) " ";
+      color: var(--accent-color);
+    }
+  }
+  
+  h6 {
+    counter-increment: subsubsection;
+    
+    &::before {
+      content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+      color: var(--accent-color);
+    }
+  }
 }
 
 .posts-list p.mb-1 {
