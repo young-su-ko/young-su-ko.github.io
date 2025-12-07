@@ -6,7 +6,7 @@ permalink: /notebook/
 
 <div class="row g-2 g-lg-5 mb-1">
   <div class="col-lg-6 col-sm-12">
-    <h3 class="fw-bold"><span class="accent"></span>PROJECTS<span class="accent">/</span></h3>
+    <h3 class="fw-bold">PROJECTS<span class="slash">/</span></h3>
     <div class="posts-list">
       {% assign projects = site.posts | where: "category", "projects" %}
       {% if projects.size > 0 %}
@@ -28,7 +28,7 @@ permalink: /notebook/
     </div>
   </div>
   <div class="col-lg-6 col-md-12">
-    <h3 class="fw-bold"><span class="accent"></span>CONCEPTS<span class="accent">/</span></h3>
+    <h3 class="fw-bold">CONCEPTS<span class="slash">/</span></h3>
     <div class="posts-list">
       {% assign concepts = site.posts | where: "category", "concepts" %}
       {% if concepts.size > 0 %}

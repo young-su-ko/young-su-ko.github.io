@@ -28,9 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
     
-    if (window.MathJax && window.MathJax.typesetPromise) {
-      window.MathJax.typesetPromise().catch(function (err) {
-        console.log('MathJax re-render error:', err);
+    // Re-render KaTeX with new theme colors
+    if (window.renderMathInElement) {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
       });
     }
   };

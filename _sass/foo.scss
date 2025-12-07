@@ -39,6 +39,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   letter-spacing: -0.7px;
+  line-height: 1.5em;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -61,7 +62,7 @@ html {
   }
 }
 
-span.accent {
+span.slash {
   color: var(--accent-color);
   transition: color 0.2s ease-in-out;
   // font-family: IBM Plex Mono;
@@ -211,22 +212,8 @@ nav {
   }
 }
 
-.MathJax,
-.MathJax_SVG,
-mjx-container {
-  color: var(--text-color) !important;
-  transition: color 0.2s ease-in-out;
-}
-
-.MathJax_SVG_Display,
-.MathJax_Display,
-mjx-container[display="true"] {
-  color: var(--text-color) !important;
-}
-
-.MathJax_SVG span,
-mjx-container mjx-math {
-  color: var(--text-color) !important;
+.katex {
+  font-size: 1.1em !important;
 }
 
 article h5,
@@ -250,12 +237,12 @@ time {
 
 .footnotes {
     li {
-      font-size: 0.95rem;
+      font-size: 0.95em;
+      line-height: 1em;
     }
     p {
-      margin-bottom: 0.4rem;
-      line-height: 1.2;
-      font-size: 0.95rem;
+      margin-bottom: 0.5em;
+      font-size: 0.95em;
     }
 }
 

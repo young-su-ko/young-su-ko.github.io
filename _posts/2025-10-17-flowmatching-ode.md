@@ -42,7 +42,7 @@ $$
 $$
 
 ##### simulating the ODE
-Directly computing the flow is tricky if the vector field is not very simple. Instead, numerical methods like the Euler method [^4] allow us to brute force the solution.
+Directly computing the flow is tricky if the vector field is not very simple. Instead, numerical methods like the Euler method[^4] allow us to brute force the solution.
 
 $$
 X_{(t+h)} = X_t + hu_t(X_t),
