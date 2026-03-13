@@ -1,7 +1,7 @@
 ---
 layout: post
 category: concepts
-title: blosum is all you learn
+title: blosum is all you learn (in progress)
 ---
 
 Here are notes from the paper: [BLOSUM Is All You Learn: Generative Antibody Models Reflect Evolutionary Priors](https://www.biorxiv.org/content/10.1101/2025.10.26.684652).
