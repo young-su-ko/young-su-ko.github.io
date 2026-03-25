@@ -80,7 +80,7 @@ $$
 \mathbb{E}_{t \sim \mathcal{U}[0,1], x \sim p_t} [u_t^\theta(x)^Tu_t^{\text{target}}(x)] = \int_0^1 \int p_t(x) p(t) u_t^\theta(x)^Tu_t^{\text{target}}(x) \text{d}x\text{d}t
 $$
 
-Since $$t \sim \mathcal{U}[0,1]$$, $$p(t) = 1$$ for $$t \in [0,1]$$, simplifying down to:
+Since $$t \sim \mathcal{U}[0,1]$$, $$p(t) = 1$$ for $$t \in [0,1]$$[^2], simplifying down to:
 
 $$
 = \int_0^1 \int p_t(x) u_t^\theta(x)^Tu_t^{\text{target}}(x) \text{d}x\text{d}t
@@ -161,3 +161,4 @@ We now see that although the original flow matching loss is intractable to compu
 ---
 {: data-content="footnotes"}
 [^1]: This is me just going through and making sure I understand the proof laid out [here](https://arxiv.org/pdf/2506.02070). Again, this is probably the best introduction to flow mathcing anyone could have asked for.
+[^2]: The PDF for a uniform is $f(x) = \frac{1}{b-a}$, and since $a=0, b=1$, $f(x)=1$.

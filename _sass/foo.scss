@@ -9,6 +9,9 @@
   --code-bg-color: #f1f1f1;
   --blockquote-bg-color: #f1f1f1;
   --blockquote-text-color: #1f1f1fee;
+  --table-border-color: rgba(31, 31, 31, 0.35);
+  --table-header-bg: rgba(31, 31, 31, 0.06);
+  --table-zebra-bg: rgba(127, 127, 127, 0.06);
 }
 
 
@@ -21,6 +24,9 @@
   --code-bg-color: rgb(41, 44, 54);
   --blockquote-bg-color: rgb(41, 44, 54);
   --blockquote-text-color: #fdfdfdfd;
+  --table-border-color: rgba(253, 253, 253, 0.28);
+  --table-header-bg: rgba(253, 253, 253, 0.08);
+  --table-zebra-bg: rgba(255, 255, 255, 0.04);
 }
 
 #theme-toggle-light-icon {
@@ -246,6 +252,56 @@ article {
       content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
       color: var(--accent-color);
     }
+  }
+}
+
+// Markdown tables (Kramdown) — header rules + zebra body, no outer/side borders
+article,
+.col-md-12,
+.about,
+.research {
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin: 1.25em 0;
+    border-collapse: collapse;
+    border: none;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  thead th {
+    background: var(--table-header-bg);
+    border-top: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
+    border-left: none;
+    border-right: none;
+    padding: 0.55em 0.75em;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  td {
+    border: none;
+    padding: 0.55em 0.75em;
+    vertical-align: top;
+  }
+
+  tbody th {
+    border: none;
+    padding: 0.55em 0.75em;
+    vertical-align: top;
+    font-weight: 600;
+  }
+
+  tbody tr:nth-child(even) td,
+  tbody tr:nth-child(even) th {
+    background: var(--table-zebra-bg);
+  }
+
+  tbody tr:last-child td,
+  tbody tr:last-child th {
+    border-bottom: 1px solid var(--table-border-color);
   }
 }
 
