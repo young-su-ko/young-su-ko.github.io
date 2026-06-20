@@ -2,7 +2,9 @@
 layout: home
 title: "Home"
 about_content: |
-  I'm a 4th year Molecular Biophysics PhD student at UCSD, advised by [Wei Wang](http://wanglab.ucsd.edu/). I received my Bachelor's in Chemistry from [Pomona College](https://www.pomona.edu/news/2022/05/31-prof-roberto-garza-mentors-young-su-ko-22-myriad-successes). I'm interested in using *deep learning to help us better understand and engineer proteins*. More specfically:
+  I'm a 4th year Molecular Biophysics PhD student at UCSD, advised by [Wei Wang](http://wanglab.ucsd.edu/), **currently interning at Prescient Design, Genentech for the summer.** 
+  
+  I received my Bachelor's in Chemistry from [Pomona College](https://www.pomona.edu/news/2022/05/31-prof-roberto-garza-mentors-young-su-ko-22-myriad-successes). I'm interested in using *deep learning to help us better understand and engineer proteins*. More specfically:
   - **generative models for proteins** (& importantly, evaluating them) 
   - **representation learning** (moving beyond masked language modeling for proteins)
   
