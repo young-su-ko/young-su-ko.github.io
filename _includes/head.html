@@ -4,19 +4,39 @@
   {% seo %}
   <script>
     (function() {
+      document.documentElement.classList.add('fonts-loading');
       const savedTheme = localStorage.getItem('theme');
       const theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
+  <style>
+    html.fonts-loading body {
+      visibility: hidden;
+    }
+  </style>
+  <script>
+    (function() {
+      const reveal = () => document.documentElement.classList.remove('fonts-loading');
+      const timeout = new Promise((resolve) => setTimeout(resolve, 3000));
+
+      if (document.fonts && document.fonts.ready) {
+        Promise.race([document.fonts.ready, timeout]).then(reveal);
+      } else {
+        window.addEventListener('load', reveal, { once: true });
+        setTimeout(reveal, 3000);
+      }
+    })();
+  </script>
   <meta name="google-site-verification" content="bkmp0fMfumL1IPwJaAby9Bl9patI1ixlLL2115s4ELg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inconsolata:wght@200..900&family=Inter:opsz,wght@14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=block" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/libs/bootstrap/bootstrap.min.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackernoon/pixel-icon-library@latest/fonts/iconfont.css">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inconsolata:wght@200..900&family=Inter:opsz,wght@14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
   <link id="highlight-theme-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.css">
   <link id="highlight-theme-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark-reasonable.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
