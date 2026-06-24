@@ -37,15 +37,18 @@ pre.hljs {
 blockquote {
   font-size: 1.2rem;
   font-style: italic;
-  border-radius: 0.5rem;
   border: none;
-  padding: 1rem;
-  background-color: var(--blockquote-bg-color);
+  padding: 0.5rem 0.6rem;
+  background-color: transparent;
   color: var(--blockquote-text-color);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   
   p { 
     font-size: 0.95rem;
     margin: 0; 
+  }
+
+  p + p {
+    margin-top: 0.65rem;
   }
 }
