@@ -8,7 +8,7 @@ code {
   border-radius: 0.5rem;
   color: var(--code-text-color);
   background: var(--code-bg-color);
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: none;
 }
 
 div.highlighter-rouge code,
@@ -22,12 +22,12 @@ pre code {
 .highlight {
   border-radius: 1rem;
   background: var(--code-bg-color);
-  transition: background-color 0.2s ease-in-out;
+  transition: none;
 }
 
 .hljs {
   background: var(--code-bg-color) !important;
-  transition: background-color 0.2s ease-in-out;
+  transition: none;
 }
 
 pre.hljs {
@@ -41,7 +41,7 @@ blockquote {
   padding: 0.5rem 0.6rem;
   background-color: transparent;
   color: var(--blockquote-text-color);
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: none;
   
   p { 
     font-size: 0.95rem;

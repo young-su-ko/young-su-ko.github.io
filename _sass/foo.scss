@@ -17,7 +17,7 @@
 
 
 [data-theme="dark"] {
-  --background-color: #1f1f1f;
+  --background-color: #181818;
   --text-color: #fdfdfd;
   --accent-color:rgb(109, 137, 212);
   --link-color: #fdfdfd;
@@ -27,18 +27,18 @@
   --blockquote-text-color: #fdfdfdfd;
   --table-border-color: rgba(253, 253, 253, 0.28);
   --table-header-bg: rgba(253, 253, 253, 0.08);
-  --table-zebra-bg: rgba(255, 255, 255, 0.04);
+  --table-zebra-bg: rgba(255, 255, 255, 0.098);
   --highlight:#f1f1f14d;
 }
 
 #theme-toggle-light-icon {
   color: var(--highlight);
-  transition: color 0.2s ease-in-out;
+  transition: none;
 }
 
 #theme-toggle-dark-icon {
   color: var(--highlight);
-  transition: color 0.2s ease-in-out;
+  transition: none;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
   font-weight: 350;
   letter-spacing: -0.55px;
   line-height: 1.25em;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: none;
 }
 
 .posts-list {
@@ -77,11 +77,11 @@ b,
 }
 
 html {
-  transition: background-color 0.2s ease-in-out;
+  transition: none;
 }
 
 * {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: none;
 }
 
 @media (max-width: 768px) {
@@ -93,14 +93,14 @@ html {
 
 span.slash {
   color: var(--accent-color);
-  transition: color 0.2s ease-in-out;
+  transition: none;
   // font-family: IBM Plex Mono;
   // font-size: 1.25em;
 }
 
 body a {
   color: var(--link-color);
-  transition: color 0.2s ease-in-out;
+  transition: none;
 }
 
 body a:hover {
@@ -120,13 +120,13 @@ body a:hover {
   width: 16px; 
   height: 16px;
   position: relative;
-  transition: color 0.2s ease-in-out;
+  transition: none;
 }
 
 .theme-toggle i {
   position: absolute;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: none;
 }
 
 .theme-toggle i.show {
@@ -207,7 +207,7 @@ body {
   max-width: 220px;
   width: 100%;
   height: auto;
-  transition: border-color 0.2s ease-in-out;
+  transition: none;
 }
 
 /* Desktop default */
@@ -246,7 +246,7 @@ span.link-text {
   color: var(--text-color);
   font-family: DotGothic16;
   letter-spacing: 0px;
-  transition: color 0.2s ease-in-out;
+  transition: none;
 }
 
 
@@ -269,6 +269,12 @@ nav {
       text-decoration: underline !important;
       text-decoration-thickness: 1.5px !important;
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  header nav {
+    margin-top: 0.7rem;
   }
 }
 
@@ -309,7 +315,7 @@ article {
     counter-increment: section;
     counter-reset: subsection;
     font-size: 1.15rem;
-    font-weight: 350;
+    font-weight: 450;
     
     &::before {
       content: counter(section) ". ";
@@ -321,7 +327,7 @@ article {
     counter-increment: subsection;
     counter-reset: subsubsection;
     font-size: 1.05rem;
-    font-weight: 350;
+    font-weight: 450;
     
     &::before {
       content: counter(section) "." counter(subsection) " ";
@@ -332,7 +338,7 @@ article {
   h6 {
     counter-increment: subsubsection;
     font-size: 1rem;
-    font-weight: 350;
+    font-weight: 400;
     
     &::before {
       content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
