@@ -11,7 +11,10 @@ layout: default
           <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
         </p> -->
         
-        <h3 class="fw-bold mb-4">{{ page.title }}</h3>
+        <div class="post-title-row mb-4">
+          <h3 class="fw-bold mb-0">{{ page.title }}</h3>
+          <p class="reading-mode-hint d-none d-md-block mb-0" data-reading-mode-ignore>press <kbd>r</kbd> for reader mode</p>
+        </div>
         {{ content }}
       </article>
   </div>

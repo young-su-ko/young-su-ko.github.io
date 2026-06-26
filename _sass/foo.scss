@@ -6,7 +6,9 @@
   --link-color: #1f1f1f;
   --font-family: "Inter";
   --code-text-color: #1f1f1f;
-  --code-bg-color: #f1f1f1;
+  --code-bg-color: #f3f4f5;
+  --code-block-bg-color: #f7f8fa;
+  --code-border-color: rgba(31, 31, 31, 0.14);
   --blockquote-bg-color: #f1f1f1;
   --blockquote-text-color: #1f1f1fee;
   --table-border-color: rgba(31, 31, 31, 0.35);
@@ -21,8 +23,10 @@
   --text-color: #fdfdfd;
   --accent-color:rgb(109, 137, 212);
   --link-color: #fdfdfd;
-  --code-text-color: rgb(190, 195, 205);
-  --code-bg-color: rgb(41, 44, 54);
+  --code-text-color: #d7d7d2;
+  --code-bg-color: #222220;
+  --code-block-bg-color: #1f201e;
+  --code-border-color: rgba(253, 253, 253, 0.12);
   --blockquote-bg-color: rgb(41, 44, 54);
   --blockquote-text-color: #fdfdfdfd;
   --table-border-color: rgba(253, 253, 253, 0.28);
@@ -298,7 +302,7 @@ nav {
 }
 
 .katex {
-  font-size: 1.1em !important;
+  font-size: 1em !important;
 }
 
 article {
@@ -395,6 +399,10 @@ article,
   tbody tr:last-child th {
     border-bottom: 1px solid var(--table-border-color);
   }
+}
+
+.post-title-row {
+  margin-bottom: 0.7rem !important;
 }
 
 .posts-list p.mb-1 {

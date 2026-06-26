@@ -82,12 +82,17 @@ const initRoughNotation = () => {
     annotateElement(element);
   });
 
-  document.querySelectorAll('article blockquote > p').forEach((element) => {
+  const quoteSelector = document.body.classList.contains('reading-mode-active')
+    ? 'article blockquote'
+    : 'article blockquote > p';
+  const quotePadding = document.body.classList.contains('reading-mode-active') ? 7 : 5;
+
+  document.querySelectorAll(quoteSelector).forEach((element) => {
     annotateElement(element, {
       type: 'bracket',
       brackets: ['left', 'right'],
       strokeWidth: toNumber(element.dataset.roughStrokeWidth, 1.5),
-      padding: toNumber(element.dataset.roughPadding, 5),
+      padding: toNumber(element.dataset.roughPadding, quotePadding),
       multiline: true,
       color: element.dataset.roughColor || '#f6474e',
     }, { themeAware: false });
@@ -134,6 +139,12 @@ const runWhenReady = () => {
 
   watchThemeChanges();
 };
+
+window.addEventListener('rough-notation:clear', clearAnnotations);
+window.addEventListener('rough-notation:refresh', () => {
+  clearAnnotations();
+  initRoughNotation();
+});
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', runWhenReady);

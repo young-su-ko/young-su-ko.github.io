@@ -5,10 +5,18 @@
 code {
   padding: 0.2rem;
   font-size: 0.8rem;
-  border-radius: 0.5rem;
+  border-radius: 0.35rem;
   color: var(--code-text-color);
   background: var(--code-bg-color);
   transition: none;
+}
+
+pre {
+  border: 1px solid var(--code-border-color);
+  border-radius: 0.3rem;
+  background: var(--code-block-bg-color);
+  margin: 0 0 0.7rem;
+  overflow: hidden;
 }
 
 div.highlighter-rouge code,
@@ -17,21 +25,36 @@ pre code {
   overflow-x: auto;
   white-space: pre-wrap;
   padding: 1rem;
+  border-radius: 0;
+  background: transparent;
 }
 
 .highlight {
-  border-radius: 1rem;
-  background: var(--code-bg-color);
+  border: 1px solid var(--code-border-color);
+  border-radius: 0.3rem;
+  background: var(--code-block-bg-color);
+  margin: 0 0 0.7rem;
+  overflow: hidden;
   transition: none;
 }
 
+.highlight pre {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+}
+
 .hljs {
-  background: var(--code-bg-color) !important;
+  background: transparent !important;
   transition: none;
 }
 
 pre.hljs {
-  background: var(--code-bg-color) !important;
+  border: 1px solid var(--code-border-color);
+  border-radius: 0.45rem;
+  background: var(--code-block-bg-color) !important;
+  margin: 0 0 0.7rem;
 }
 
 blockquote {
