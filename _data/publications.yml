@@ -1,15 +1,15 @@
 featured:
+- name: "Miniaturizing and modifying natural proteins with Raygun"
+  authors: "Kapil Devkota, Daichi Shonai, Joey Mao, Young Su Ko*, Wei Wang, Scott Soderling, Rohit Singh"
+  journal: "Nature"
+  year: "2026"
+  url: "https://www.nature.com/articles/s41586-026-10842-8"
+
 - name: "forge: sequence-based binder design with latent flow matching"
   authors: "Young Su Ko* and Wei Wang"
   journal: "Machine Learning in Structural Biology (MLSB)"
   year: "2025"
   url: "https://www.mlsb.io/papers_2025/75.pdf"
-
-- name: "Miniaturizing, Modifying, and Magnifying Nature's Proteins with Raygun"
-  authors: "Kapil Devkota, Daichi Shonai, Joey Mao, Young Su Ko*, Wei Wang, Scott Soderling, Rohit Singh"
-  journal: "bioRxiv"
-  year: "2025"
-  url: "https://www.biorxiv.org/content/10.1101/2024.08.13.607858v2"
 
 - name: "TUnA: an uncertainty-aware transformer model for sequence-based protein–protein interaction prediction"
   authors: "Young Su Ko*, Jonathan Parkinson, Cong Liu, Wei Wang"
@@ -18,11 +18,11 @@ featured:
   url: "https://academic.oup.com/bib/article/25/5/bbae359/7720609"
 
 index:
-- name: "Miniaturizing, Modifying, and Magnifying Nature's Proteins with Raygun"
+- name: "Miniaturizing and modifying natural proteins with Raygun"
   authors: "Kapil Devkota, Daichi Shonai, Joey Mao, Young Su Ko*, Wei Wang, Scott Soderling, Rohit Singh"
-  journal: "bioRxiv"
-  year: "2025"
-  url: "https://www.biorxiv.org/content/10.1101/2024.08.13.607858v2"
+  journal: "Nature"
+  year: "2026"
+  url: "https://www.nature.com/articles/s41586-026-10842-8"
 
 - name: "Benchmarking text-integrated protein language model embeddings and embedding fusion on diverse downstream tasks"
   authors: "Young Su Ko*, Jonathan Parkinson, Wei Wang"
