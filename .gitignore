@@ -6,3 +6,4 @@ _site
 Gemfile.lock
 .zsh_src
 scratch/
+.DS_Store

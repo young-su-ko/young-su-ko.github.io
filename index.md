@@ -2,7 +2,7 @@
 layout: home
 title: "Home"
 about_content: |
-  I'm a 4th year Molecular Biophysics PhD student at UCSD, advised by [Wei Wang](http://wanglab.ucsd.edu/), **<span data-rough-notation="underline" data-rough-color="#2b60de" data-rough-stroke-width="1.2" data-rough-padding="0.05" data-rough-multiline="True" data-rough-iterations="2">currently interning at Prescient Design, Genentech for the summer.</span>** I received my Bachelor's in Chemistry from [Pomona College](https://www.pomona.edu/news/2022/05/31-prof-roberto-garza-mentors-young-su-ko-22-myriad-successes). 
+  I'm a final-year Molecular Biophysics PhD student at UCSD, advised by [Wei Wang](http://wanglab.ucsd.edu/). **<span data-rough-notation="underline" data-rough-color="#2b60de" data-rough-stroke-width="1.2" data-rough-padding="0.05" data-rough-multiline="True" data-rough-iterations="2">Concurrently, I work on AI/ML research with Pranav Rao and Sai Pooja Mahajan at Prescient Design, Genentech.</span>** I also actively collaborate with [Rohit Singh](https://singhlab.net/) and friends at Duke University. I received my Bachelor's in Chemistry from [Pomona College](https://www.pomona.edu/news/2022/05/31-prof-roberto-garza-mentors-young-su-ko-22-myriad-successes).
   
   I'm interested in using *deep learning to help us better understand and engineer proteins*. More specfically:
   - **generative models for proteins** (& importantly, evaluating them) 
